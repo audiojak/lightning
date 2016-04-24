@@ -12,5 +12,5 @@ RUN curl -sS https://getcomposer.org/installer | php \
 
 # install Lightning
 RUN composer config repositories.drupal composer https://packagist.drupal-composer.org \
-  && composer require "drupal/lightning 8.x-1.00-rc3" --prefer-dist \
+  && composer require "drupal/lightning 8.1.00-rc3" --prefer-dist \
   && chown -R www-data:www-data modules
