@@ -1,0 +1,18 @@
+version: '1'
+services:
+  web:
+    build: .
+    ports:
+    - "80:80"
+    volumes:
+    - logvolume01:/var/log
+    - codevolume01:/var/www/html
+    links:
+    - mysql
+  mysql:
+    image: mysql
+    ports:
+    - "80:80"
+volumes:
+  logvolume01: {}
+  codevolume01: {}
