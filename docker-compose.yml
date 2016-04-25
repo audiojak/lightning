@@ -12,7 +12,7 @@ services:
   mysql:
     image: mysql
     ports:
-    - "80:80"
+    - "3306:3306"
 volumes:
   logvolume01: {}
   codevolume01: {}
