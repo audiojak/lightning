@@ -4,9 +4,6 @@ services:
     build: .
     ports:
     - "80:80"
-    volumes:
-    - logvolume01:/var/log
-    - codevolume01:/var/www/html
     links:
     - mysql
   mysql:
@@ -15,6 +12,3 @@ services:
     - "3306:3306"
     environment:
     - MYSQL_ROOT_PASSWORD=root
-volumes:
-  logvolume01: {}
-  codevolume01: {}
